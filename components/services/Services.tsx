@@ -29,21 +29,25 @@ const responsive = {
 function Services() {
   return (
     <div className="bg-[#F2F2F2]">
-      <div className="px-12">
+      <div className="px-12 py-12">
         <div>
-          <h2>Our Services</h2>
-          <p>
+          <h2 className="text-2xl text-slate-700">Our Services</h2>
+          <p className="text-slate-600 max-w-md py-4">
             Contact us today to get started and discover why we are the
             preferred choice for countless individuals and businesses.
           </p>
         </div>
         <Carousel responsive={responsive}>
           {[1, 2, 3, 4, 5, 6, 7].map((_, i) => (
-            <div key={i} className="mr-3">
-              <Image src={img1} alt="" />
-              <div className="bg-white">
-                <h2>Local or long-distance moving</h2>
-                <p>
+            <div key={i} className="mr-3 grid">
+              <div className="grid">
+                <Image src={img1} alt="" objectFit="fill" />
+              </div>
+              <div className="bg-white ">
+                <h2 className="bg-[#0B1B2B] text-white py-2 text-center">
+                  Local or long-distance moving
+                </h2>
+                <p className="text-slate-600 py-2">
                   Moving companies can help you move locally within a city or
                   region, as well as facilitate long-distance moves across
                   different cities, states, or even countries.

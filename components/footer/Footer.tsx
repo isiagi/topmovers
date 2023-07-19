@@ -12,7 +12,7 @@ import { FiTwitter } from "react-icons/fi";
 function Footer() {
   return (
     <div className="bg-[#0B1B2B] text-white">
-      <div className="flex justify-between">
+      <div className="flex flex-wrap justify-between md:px-12 px-2">
         <div>
           <Image src={logo} alt="" width={60} height={60} />
           <div>
