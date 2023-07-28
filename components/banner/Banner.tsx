@@ -9,9 +9,9 @@ import { FiTwitter } from "react-icons/fi";
 
 function Banner() {
   return (
-    <div className="">
-      <div className="flex justify-between py-3">
-        <div className="flex">
+    <div className="bg-gray-100">
+      <div className="flex flex-wrap justify-between py-3 md:px-12 px-2">
+        <div className="flex gap-5">
           <div className="flex items-center">
             <div className="bg-red-400 p-1 rounded text-white">
               <BiPhoneCall />
