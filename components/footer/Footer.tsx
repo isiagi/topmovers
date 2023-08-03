@@ -12,7 +12,7 @@ import { FiTwitter } from "react-icons/fi";
 function Footer() {
   return (
     <div className="bg-[#0B1B2B] text-white">
-      <div className="flex flex-wrap justify-between md:px-12 px-2">
+      <div className="flex flex-wrap justify-between md:px-12 px-2 leading-loose py-10">
         <div>
           <Image src={logo} alt="" width={60} height={60} />
           <div>
@@ -22,19 +22,19 @@ function Footer() {
             </p>
           </div>
           <div className="flex items-center gap-3">
-            <div className="bg-red-400 p-1 rounded text-white">
+            <div className="bg-white p-1 rounded text-[#0B1B2B]">
               <PiTiktokLogoBold />
             </div>
-            <div className="bg-red-400 p-1 rounded text-white">
+            <div className="bg-white p-1 rounded text-[#0B1B2B]">
               <BsWhatsapp />
             </div>
-            <div className="bg-red-400 p-1 rounded text-white">
+            <div className="bg-white p-1 rounded text-[#0B1B2B]">
               <FiFacebook />
             </div>
-            <div className="bg-red-400 p-1 rounded text-white">
+            <div className="bg-white p-1 rounded text-[#0B1B2B]">
               <BsInstagram />
             </div>
-            <div className="bg-red-400 p-1 rounded text-white">
+            <div className="bg-white p-1 rounded text-[#0B1B2B]">
               <FiTwitter />
             </div>
           </div>
@@ -72,6 +72,10 @@ function Footer() {
             <p>reetyeuiiokkncdsawoiuytoiuytui</p>
           </div>
         </div>
+      </div>
+      <hr />
+      <div className="py-4 text-center">
+        <p>Top Movez Uganda 2023</p>
       </div>
     </div>
   );

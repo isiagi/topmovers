@@ -31,8 +31,8 @@ function Services() {
     <div className="bg-[#F2F2F2]">
       <div className="px-12 py-12">
         <div>
-          <h2 className="text-2xl text-slate-700">Our Services</h2>
-          <p className="text-slate-600 max-w-md py-4">
+          <h2 className="text-3xl text-[#096FC2] border-b-2 pb-3 border-[#EA6E71] w-fit uppercase">Our Services</h2>
+          <p className="text-slate-700 max-w-md py-6">
             Contact us today to get started and discover why we are the
             preferred choice for countless individuals and businesses.
           </p>
@@ -47,7 +47,7 @@ function Services() {
                 <h2 className="bg-[#0B1B2B] text-white py-2 text-center">
                   Local or long-distance moving
                 </h2>
-                <p className="text-slate-600 py-2">
+                <p className="text-slate-700 py-2 px-2">
                   Moving companies can help you move locally within a city or
                   region, as well as facilitate long-distance moves across
                   different cities, states, or even countries.
