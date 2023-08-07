@@ -10,7 +10,7 @@ import Link from "next/link";
 
 function Banner() {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 md:block hidden">
       <div className="flex flex-wrap justify-between py-3 md:px-12 px-2">
         <div className="flex gap-5 flex-wrap">
           <div className="flex items-center gap-2">

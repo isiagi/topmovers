@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { HiOutlineMail } from "react-icons/hi";
 import logo from "@/public/topmover.png";
 import Link from "next/link";
@@ -10,9 +10,18 @@ import { CgDetailsMore } from "react-icons/cg";
 
 function Nav() {
   const [open, setOpen] = useState(false);
+  const [offset, setOffset] = useState(0)
+
+  useEffect(() => {
+    window.onscroll = () => {
+      setOffset(window.scrollY)
+    }
+  
+  }, [])
+  
 
   return (
-    <div className="relative h-[12vh] bg-[#0B1B2B] flex items-center text-white">
+    <div className={`${offset > 30 ? "fixed" : "relative"} z-10 w-full transition ease-in-out top-0 h-[12vh] bg-[#0B1B2B] flex items-center text-white`}>
       <div className="flex justify-between items-center w-full md:px-12 px-2">
         <div className="flex gap-20 items-center md:w-auto w-full">
           <div className="flex justify-between md:w-auto w-full">

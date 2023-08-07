@@ -8,10 +8,10 @@ function page() {
   return (
     <div>
       <div className="container md:px-12 px-2">
-        <div className="flex sm:flex-nowrap flex-wrap">
+        <div className="py-14 flex sm:flex-nowrap flex-wrap">
           <div className="lg:w-2/3 md:w-1/2">
-            <h2 className="text-2xl leading-loose">Who We Are</h2>
-            <h2 className="text-xl">Welcome To Movers & Packers</h2>
+            {/* <h2 className="text-2xl leading-loose">Who We Are</h2> */}
+            <h2 className="text-3xl">Welcome Top Movers & Packers</h2>
             <div className="leading-loose">
               <p className="text-slate-700 py-2 px-2 leading-loose">
                 Welcome to Top Movez Ugnada, your trusted moving partner. With
@@ -49,15 +49,15 @@ function page() {
               </p>
             </div>
           </div>
-          <div className="lg:w-1/3 md:w-1/2 w-full relative h-[450px] bg-green-300">
-            <Image src={image1} alt="" className="h-full" objectFit="contain" />
+          <div className="lg:w-1/3 md:w-1/2 w-full relative  bg-green-300">
+            <Image src={image1} alt="" className="h-full object-cover" />
           </div>
         </div>
       </div>
+      <Testmonial />
       <div>
         <Services />
       </div>
-      <Testmonial />
       
     </div>
   );

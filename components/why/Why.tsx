@@ -9,8 +9,8 @@ import { BsGearWideConnected } from "react-icons/bs";
 
 const whyData = [
   {
-    title: "Professional",
-    para: "With years of experience in the industry, we have honed our skills and perfected our moving processes. Our team of professionals is highly trained and knowledgeable in handling all aspects of a move, ensuring efficiency and quality service.",
+    title: "Experience and Expertise",
+    para: "With experience in the industry, we have honed our skills and perfected our moving processes. Our team of professionals is highly trained and knowledgeable in handling all aspects of a move, ensuring efficiency and quality service.",
     icon: <BsGearWideConnected />,
   },
   {
@@ -45,15 +45,14 @@ function Why() {
     <div>
       <div className="py-10 px-12">
         <div>
-          
+          <h2 className="text-3xl text-[#096FC2] border-b-2 pb-3 border-[#EA6E71] w-fit uppercase">
+            Why Choose US
+          </h2>
 
-          <h2 className="text-3xl text-[#096FC2] border-b-2 pb-3 border-[#EA6E71] w-fit uppercase">Why Choose US</h2>
-          
           <p className="text-slate-600 max-w-md py-6 mb-3">
             Choose Top movers as your trusted moving company, and experience the
             difference we can make in your relocation journey.
           </p>
-      
         </div>
         <div className="grid grid-cols-fluid gap-5">
           {whyData.map(({ title, para, icon }, i) => (

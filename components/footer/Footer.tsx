@@ -9,13 +9,21 @@ import { FiFacebook } from "react-icons/fi";
 import { BsInstagram } from "react-icons/bs";
 import { FiTwitter } from "react-icons/fi";
 
+import { BiPhoneCall } from "react-icons/bi";
+import { HiOutlineMail } from "react-icons/hi";
+
+import { homeData } from "@/utils/servicesData";
+import Link from "next/link";
+
 function Footer() {
   return (
     <div className="bg-[#0B1B2B] text-white">
-      <div className="flex flex-wrap justify-between md:px-12 px-2 leading-loose py-10">
+      <div className="flex flex-wrap justify-between md:px-12 px-2 leading-loose py-12">
         <div>
-          <Image src={logo} alt="" width={60} height={60} />
-          <div>
+          <div className="bg-white w-[80px] h-[80px]">
+            <Image src={logo} alt="" />
+          </div>
+          <div className="my-2">
             <p className="max-w-xs">
               Lorem ipsum dolor sit amet, consect etur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore ali qua.
@@ -40,36 +48,45 @@ function Footer() {
           </div>
         </div>
         <div>
-          <h3 className="mb-4">Site Map</h3>
+          <h3 className="mb-4 font-medium uppercase">Site Map</h3>
           <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Contact</li>
+            <Link href="/">
+              <li className="hover:text-[#A73416]">Home</li>
+            </Link>
+            <Link href="/about_us">
+              <li className="hover:text-[#A73416]">About Us</li>
+            </Link>
+            <Link href="/services">
+              <li className="hover:text-[#A73416]">Services</li>
+            </Link>
+            <Link href="/contact">
+              <li className="hover:text-[#A73416]">Contact</li>
+            </Link>
           </ul>
         </div>
         <div>
-          <h3 className="mb-4">Services</h3>
+          <h3 className="mb-4 font-medium uppercase">Services</h3>
           <ul>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Services</li>
-            <li>Contact</li>
+            {homeData.map(({ id, title }) => (
+              <Link href="/" key={id}>
+                <li className="hover:text-[#A73416]">{title}</li>
+              </Link>
+            ))}
           </ul>
         </div>
         <div>
-          <h3 className="mb-4">GET IN TOUCH</h3>
-          <div className="flex items-center">
-            <GoLocation />
-            <p>reetyeuiiokkncdsawoiuytoiuytui</p>
+          <h3 className="mb-4 font-medium">GET IN TOUCH</h3>
+          <div className="flex items-center gap-2">
+            <HiOutlineMail className="text-xl text-[#A73416] font-bold" />
+            <p>topmovezuganda@gmail.com</p>
           </div>
-          <div className="flex items-center">
-            <GoLocation />
-            <p>reetyeuiiokkncdsawoiuytoiuytui</p>
+          <div className="flex items-center gap-2">
+            <BiPhoneCall className="text-xl text-[#A73416] font-bold" />
+            <p>+256786998578/+25690234543</p>
           </div>
-          <div className="flex items-center">
-            <GoLocation />
-            <p>reetyeuiiokkncdsawoiuytoiuytui</p>
+          <div className="flex items-center gap-2">
+            <GoLocation className="text-xl text-[#A73416] font-bold" />
+            <p>Kampala, Uganda</p>
           </div>
         </div>
       </div>
