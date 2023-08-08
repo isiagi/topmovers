@@ -68,7 +68,7 @@ function Footer() {
           <h3 className="mb-4 font-medium uppercase">Services</h3>
           <ul>
             {homeData.map(({ id, title }) => (
-              <Link href="/" key={id}>
+              <Link href="/services#movement" key={id}>
                 <li className="hover:text-[#A73416]">{title}</li>
               </Link>
             ))}

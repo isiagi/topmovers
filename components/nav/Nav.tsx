@@ -21,7 +21,7 @@ function Nav() {
   
 
   return (
-    <div className={`${offset > 30 ? "fixed" : "relative"} z-10 w-full transition ease-in-out top-0 h-[12vh] bg-[#0B1B2B] flex items-center text-white`}>
+    <div className={`${offset > 30 ? "fixed" : "relative"} z-10 w-full transition ease-in-out ${offset > 30 ? "top-0" : ""}  h-[12vh] bg-[#0B1B2B] flex items-center text-white`}>
       <div className="flex justify-between items-center w-full md:px-12 px-2">
         <div className="flex gap-20 items-center md:w-auto w-full">
           <div className="flex justify-between md:w-auto w-full">

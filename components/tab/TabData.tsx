@@ -8,7 +8,7 @@ function TabData({}: Props) {
     <div className="">
       <div>
         <div className="h-[400px]">
-          <Image src={image1} alt="" className="h-full" objectFit="cover" />
+          <Image src={image1} alt="" className="h-full rounded" objectFit="cover" />
         </div>
         <div>
           <p>

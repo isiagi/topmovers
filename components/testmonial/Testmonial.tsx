@@ -25,7 +25,7 @@ function Testmonial() {
                   eos ut est nam, corporis repellendus maxime fuga adipisci ea,
                   asperiores veniam doloribus earum recusandae minima quo!
                   Repellat totam reiciendis reprehenderit magnam architecto,
-                  voluptatibus saepe maiores repellendus beatae fuga?
+                  voluptatibus saepe maiores repellendus beatae fuga.
                 </p>
                
               </div>
