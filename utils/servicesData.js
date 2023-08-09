@@ -66,7 +66,7 @@ export const homeData = [
     id: 8,
     title: "Specialty item handling",
     description:
-      "If you have valuable, delicate, or oversized items such as pianos, artwork, or pool tables, We offer specialized services to ensure their safe transport.",
+      "You have valuable, delicate, or oversized items like pianos, artwork, or pool tables, Our specialized services ensure their safe transport.",
     imageUrl:
       "https://images.unsplash.com/photo-1572010696997-c73e95aeebe8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fG1vdmluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60",
     link: "handling"

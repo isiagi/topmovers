@@ -62,13 +62,16 @@ function Footer() {
             <Link href="/contact">
               <li className="hover:text-[#A73416]">Contact</li>
             </Link>
+            <Link href="/quote">
+              <li className="hover:text-[#A73416]">Get a Quote</li>
+            </Link>
           </ul>
         </div>
         <div>
           <h3 className="mb-4 font-medium uppercase">Services</h3>
           <ul>
             {homeData.map(({ id, title }) => (
-              <Link href="/services#movement" key={id}>
+              <Link href="/services" key={id}>
                 <li className="hover:text-[#A73416]">{title}</li>
               </Link>
             ))}
@@ -91,8 +94,15 @@ function Footer() {
         </div>
       </div>
       <hr />
-      <div className="py-4 text-center">
+      <div className="py-6 text-center">
         <p>Top Movez Uganda 2023</p>
+        <p>
+          designed and developed with{" "}
+          <span className="text-[#A73416]">Love</span> by{" "}
+          <span>
+            <Link href="https://portfolio-website-isiagi.vercel.app/">Geofrey Isiagi</Link>
+          </span>
+        </p>
       </div>
     </div>
   );

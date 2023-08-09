@@ -3,6 +3,8 @@ import React from "react";
 import image1 from "@/public/hero.jpg";
 import Testmonial from "@/components/testmonial/Testmonial";
 import Services from "@/components/services/Services";
+import Why from "@/components/why/Why";
+import Banner1 from "@/components/banner1/Banner1";
 
 function page() {
   return (
@@ -11,7 +13,7 @@ function page() {
         <div className="py-14 flex sm:flex-nowrap flex-wrap">
           <div className="lg:w-2/3 md:w-1/2">
             {/* <h2 className="text-2xl leading-loose">Who We Are</h2> */}
-            <h2 className="text-3xl">Welcome Top Movers & Packers</h2>
+            <h2 className="text-3xl text-[#026CC0]">Welcome Top Movers & Packers</h2>
             <div className="leading-loose">
               <p className="text-slate-700 py-2 px-2 leading-loose">
                 Welcome to Top Movez Ugnada, your trusted moving partner. With
@@ -57,6 +59,8 @@ function page() {
       <Testmonial />
       <div>
         <Services />
+        <Why />
+        <Banner1 />
       </div>
       
     </div>

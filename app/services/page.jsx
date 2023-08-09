@@ -7,57 +7,56 @@ import { useRouter } from "next/navigation";
 import { homeData } from "@/utils/servicesData";
 import Why from "@/components/why/Why";
 import Team from "@/components/team/Team";
+import Image from "next/image";
+import Banner1 from "@/components/banner1/Banner1";
 
 function Page() {
-  const [tab, setTab] = useState("");
-
-  useEffect(() => {
-    // Check if there's a hash fragment in the URL
-    const hash = window.location.hash.substring(1);
-    if (hash) {
-      setTab(hash);
-      
-    } else {
-      setTab("movement")
-      window.history.pushState({}, "", "#" + "movement");
-    }
-  }, []);
-
-  const handleClick = (route) => {
-    // Update the hash fragment in the URL without triggering a page reload
-    window.history.pushState({}, "", "#" + route);
-    setTab(route);
-  };
-
   return (
-    <div className=" ">
-      <div className="bg-gray-100 flex md:px-12 px-2 gap-8 sm:flex-nowrap flex-wrap py-10">
-        <div className="bg-white p-5 md:max-w-[30%] w-full h-fit">
-          <ul className="leading-loose text-slate-600">
-          {homeData.map(({id, title, link}) => (
-            <li onClick={() => { handleClick(link)}} key={id} className="cursor-pointer">{title}</li>
-          ))}
-          </ul>
+    <>
+      <div className="bg-[#F5F5F5] py-20">
+        <div className="md:px-12 px-2">
+        <div>
+          <h2 className="text-3xl text-[#096FC2] border-b-2 pb-3 border-[#EA6E71] w-fit uppercase">
+            Our Services
+          </h2>
+          <p className="text-slate-700 max-w-md py-7">
+            Contact us today to get started and discover why we are the
+            preferred choice for countless individuals and businesses.
+          </p>
         </div>
-        <div className="md:max-w-[70%] w-full">
-          {(() => {
-            switch (tab) {
-              case "movement":
-                return <TabData />;
-              case "about":
-                return <h1>About</h1>;
-              case "services":
-                return <h1>Services</h1>;
-
-              default:
-                return <h1>Nice Work</h1>;
-            }
-          })()}
+          <div className="mr-3 grid grid-cols-fluid gap-5">
+            {homeData.map(({ id, title, description, imageUrl }) => (
+              <div key={id} className="border border-[#7d95ae]">
+                <div className="">
+                  <Image
+                    src={imageUrl}
+                    alt=""
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{
+                      width: "100%",
+                      height: "200px",
+                      objectFit: "cover",
+                    }}
+                  />
+                </div>
+                <div className="bg-white ">
+                  <h2 className="bg-[#0B1B2B] text-white py-2 text-center">
+                    {title}
+                  </h2>
+                  <p className="text-slate-700 py-2 px-2 leading-loose">
+                    {description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
+      <Banner1 />
       <Why />
-      <Team />
-    </div>
+    </>
   );
 }
 

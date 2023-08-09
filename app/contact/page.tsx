@@ -6,8 +6,17 @@ import { FiTwitter } from "react-icons/fi";
 
 function page() {
   return (
-    <section className="text-gray-600 body-font relative">
-      <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+    <section className="text-gray-600 body-font relative py-20">
+      <div className="md:px-12 px-2">
+          <h2 className="text-3xl text-[#096FC2] border-b-2 pb-3 border-[#EA6E71] w-fit uppercase">
+            Contact Us
+          </h2>
+          <p className="text-slate-700 max-w-md py-7">
+            Contact us today to get started and discover why we are the
+            preferred choice for countless individuals and businesses.
+          </p>
+        </div>
+      <div className="container px-5 py-18 mx-auto flex sm:flex-nowrap flex-wrap">
         <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe
             width="100%"

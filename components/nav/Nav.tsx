@@ -79,7 +79,7 @@ function Nav() {
           <div className="bg-red-400 p-1 rounded">
             <HiOutlineMail />
           </div>
-          <h2>REQUEST A QUOTE</h2>
+          <Link href="/quote"><h2>REQUEST A QUOTE</h2></Link>
         </div>
       </div>
     </div>
