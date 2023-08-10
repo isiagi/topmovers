@@ -100,7 +100,7 @@ function Footer() {
           designed and developed with{" "}
           <span className="text-[#A73416]">❤</span> by{" "}
           <span className="hover:underline">
-            <Link href="https://portfolio-website-isiagi.vercel.app/">Geofrey Isiagi</Link>
+            <Link href="https://portfolio-website-isiagi.vercel.app/" target="_blank">Geofrey Isiagi</Link>
           </span>
         </p>
       </div>
