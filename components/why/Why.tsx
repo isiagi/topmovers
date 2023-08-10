@@ -60,7 +60,7 @@ function Why() {
               key={i}
               className="bg-[#F5F5F5] relative p-3 flex items-center"
             >
-              <div className="absolute text-xl bg-[#EA6E71] top-[-10px] left-[-10px] w-[40px] h-[40px] flex items-center justify-center rounded-full text-white border-dashed border-2 border-slate-800">
+              <div className="absolute text-xl bg-[#EA6E71] top-[-10px] left-[-10px] md:w-[40px] w-[30px] md:h-[40px] h-[30px] flex items-center justify-center rounded-full text-white border-dashed border-2 border-slate-800">
                 {icon}
               </div>
               <div className="mt-4">

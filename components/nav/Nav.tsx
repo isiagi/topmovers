@@ -57,20 +57,20 @@ function Nav() {
           {/* mobile nav */}
           <ul
             className={`
-        md:hidden bg-red-500 z-10 flex flex-col gap-5 absolute w-full top-[100px] overflow-y-auto py-12 font-medium pl-4
-        duration-500 text-slate-700 ${open ? "left-0" : "left-[-100%]"}
+        md:hidden bg-[#0B1B2B] z-10 flex flex-col gap-5 absolute w-full top-[50px] overflow-y-auto py-12 font-medium pl-4
+        duration-500 text-white ${open ? "left-0" : "left-[-100%]"}
         `}
           >
-            <Link href="/">
+            <Link href="/" onClick={() => setOpen(false)}>
               <li>Home</li>
             </Link>
-            <Link href="/about_us">
+            <Link href="/about_us" onClick={() => setOpen(false)}>
               <li>About Us</li>
             </Link>
-            <Link href="/services">
+            <Link href="/services" onClick={() => setOpen(false)}>
               <li>Services</li>
             </Link>
-            <Link href={"/contact"}>
+            <Link href={"/contact"} onClick={() => setOpen(false)}>
               <li>Contact</li>
             </Link>
           </ul>
