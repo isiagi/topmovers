@@ -31,7 +31,7 @@ const responsive = {
 function Services() {
   return (
     <div className="bg-[#F2F2F2]">
-      <div className="px-12 py-12">
+      <div className="md:px-12 px-2 py-12">
         <div>
           <h2 className="text-3xl text-[#096FC2] border-b-2 pb-3 border-[#EA6E71] w-fit uppercase">
             Our Services

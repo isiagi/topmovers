@@ -8,8 +8,8 @@ const slideImages = [1,2,3];
 
 function Testmonial() {
   return (
-    <div className="w-full h-[80vh] bg-[url('https://images.unsplash.com/photo-1600725935160-f67ee4f6084a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fG1vdmVyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60')] bg-cover bg-center">
-      <div className="bg-black opacity-90 px-12 h-full">
+    <div className="w-full h-[95vh] bg-[url('https://images.unsplash.com/photo-1600725935160-f67ee4f6084a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fG1vdmVyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60')] bg-cover bg-center">
+      <div className="bg-black opacity-90 md:px-12 px-2 h-full">
           <h2 className="text-white  text-2xl text-center pt-12">What Your Clients Say</h2>
         <Slide indicators={false}>
           {slideImages.map((_, index) => (

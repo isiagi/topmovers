@@ -43,7 +43,7 @@ const whyData = [
 function Why() {
   return (
     <div>
-      <div className="py-10 px-12">
+      <div className="py-10 md:px-12 px-2">
         <div>
           <h2 className="text-3xl text-[#096FC2] border-b-2 pb-3 border-[#EA6E71] w-fit uppercase">
             Why Choose US
