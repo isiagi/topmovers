@@ -57,8 +57,8 @@ function Nav() {
           {/* mobile nav */}
           <ul
             className={`
-        md:hidden bg-[#0B1B2B] opacity-80 z-10 flex flex-col gap-5 absolute w-full top-[90px] overflow-y-auto py-12 font-medium pl-4
-        duration-1000 text-white ${open ? "left-0" : "left-[-100%]"}
+        md:hidden bg-[#0B1B2B] opacity-80 z-10 flex flex-col gap-5 absolute w-full top-[85px] overflow-y-auto py-12 font-medium pl-4
+        duration-700 text-white ${open ? "left-0" : "left-[-100%]"}
         `}
           >
             <Link href="/" onClick={() => setOpen(false)}>
