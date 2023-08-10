@@ -98,8 +98,8 @@ function Footer() {
         <p>Top Movez Uganda 2023</p>
         <p>
           designed and developed with{" "}
-          <span className="text-[#A73416]">Love</span> by{" "}
-          <span>
+          <span className="text-[#A73416]">❤</span> by{" "}
+          <span className="hover:underline">
             <Link href="https://portfolio-website-isiagi.vercel.app/">Geofrey Isiagi</Link>
           </span>
         </p>
