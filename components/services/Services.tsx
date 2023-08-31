@@ -4,8 +4,6 @@ import Image from "next/image";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-import img1 from "@/public/hero.jpg";
-
 import { homeData } from "@/utils/servicesData";
 
 const responsive = {
@@ -31,7 +29,7 @@ const responsive = {
 function Services() {
   return (
     <div className="bg-[#F2F2F2]">
-      <div className="md:px-12 px-2 py-12">
+      <section className="md:px-12 px-2 py-12">
         <div>
           <h2 className="text-3xl text-[#096FC2] border-b-2 pb-3 border-[#EA6E71] w-fit uppercase">
             Our Services
@@ -51,7 +49,10 @@ function Services() {
                   width={0}
                   height={0}
                   sizes="100vw"
-                  style={{ width: "100%", height: "200px", objectFit: "cover" }}
+                  style={{
+                    width: "100%",
+                    height: "200px",
+                  }}
                 />
               </div>
               <div className="bg-white ">
@@ -65,7 +66,7 @@ function Services() {
             </div>
           ))}
         </Carousel>
-      </div>
+      </section>
     </div>
   );
 }
