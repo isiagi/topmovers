@@ -13,17 +13,21 @@ function Banner() {
     <div className="bg-gray-100 md:block hidden">
       <div className="flex flex-wrap justify-between py-3 md:px-12 px-2">
         <div className="flex gap-5 flex-wrap">
-          <div className="flex items-center gap-2">
-            <div className="bg-red-400 p-1 rounded text-white">
-              <BiPhoneCall />
+          <a href="tel:+256742891524">
+            <div className="flex items-center gap-2">
+              <div className="bg-red-400 p-1 rounded text-white">
+                <BiPhoneCall />
+              </div>
+              <p className="text-slate-600">+256742891524/+256783559665</p>
             </div>
-            <p className="text-slate-600">+256789645572446</p>
-          </div>
+          </a>
           <div className="flex items-center gap-2">
             <div className="bg-red-400 p-1 rounded text-[#096FC2]">
               <HiOutlineMail />
             </div>
-            <p className="text-slate-600">topmoverz@gmail.com</p>
+            <a href="mailto:recipient@example.com">
+              <p className="text-slate-600">topmoverz@gmail.com</p>
+            </a>
           </div>
         </div>
         <div className="flex items-center gap-3">

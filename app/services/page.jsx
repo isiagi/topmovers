@@ -6,24 +6,29 @@ import { useRouter } from "next/navigation";
 
 import { homeData } from "@/utils/servicesData";
 import Why from "@/components/why/Why";
-import Team from "@/components/team/Team";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Banner1 from "@/components/banner1/Banner1";
 
 function Page() {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      // exist={{ opacity: 0 }}
+      transition={{ duration: 2 }}
+    >
       <div className="bg-[#F5F5F5] py-20">
         <div className="md:px-12 px-2">
-        <div>
-          <h2 className="text-3xl text-[#096FC2] border-b-2 pb-3 border-[#EA6E71] w-fit uppercase">
-            Our Services
-          </h2>
-          <p className="text-slate-700 max-w-md py-7">
-            Contact us today to get started and discover why we are the
-            preferred choice for countless individuals and businesses.
-          </p>
-        </div>
+          <div>
+            <h2 className="text-3xl text-[#096FC2] border-b-2 pb-3 border-[#EA6E71] w-fit uppercase">
+              Our Services
+            </h2>
+            <p className="text-slate-700 max-w-md py-7">
+              Contact us today to get started and discover why we are the
+              preferred choice for countless individuals and businesses.
+            </p>
+          </div>
           <div className="mr-3 grid grid-cols-fluid gap-5">
             {homeData.map(({ id, title, description, imageUrl }) => (
               <div key={id} className="border border-[#7d95ae]">
@@ -56,7 +61,7 @@ function Page() {
       </div>
       <Banner1 />
       <Why />
-    </>
+    </motion.div>
   );
 }
 

@@ -1,6 +1,9 @@
 import img1 from "@/public/5.jpeg";
 import img2 from "@/public/12.jpeg";
 import img3 from "@/public/7.jpeg";
+import img4 from "@/public/9.jpeg";
+import img5 from "@/public/6.jpeg";
+import img6 from "@/public/4.jpeg";
 
 export const homeData = [
   {
@@ -16,8 +19,7 @@ export const homeData = [
     title: "Residential moving",
     description:
       "Whether you're moving from a house, apartment, or condominium, We handle the packing, loading, transportation, and unloading of your items.",
-    imageUrl:
-      "https://img.freepik.com/free-photo/young-couple-moving-new-home-together-african-american-couple-with-cardboard-boxes_1157-40331.jpg?size=626&ext=jpg",
+    imageUrl: img3,
     link: "Residential",
   },
   {
@@ -25,8 +27,7 @@ export const homeData = [
     title: "Commercial moving",
     description:
       "We assist businesses in relocating their offices, stores, or other commercial spaces. We have experience in handling specialized equipment.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1505691938895-1758d7feb511?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1vdmluZyUyMGhvdXNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+    imageUrl: img6,
     link: "commercial",
   },
   {
@@ -34,7 +35,7 @@ export const homeData = [
     title: "Packing and Unpacking",
     description:
       "We provide all the necessary packing materials, pack your belongings securely, and unpack them at your new location.",
-    imageUrl: img3,
+    imageUrl: img4,
     link: "packing",
   },
   {
@@ -42,8 +43,7 @@ export const homeData = [
     title: "Loading and unloading",
     description:
       "We are skilled in safely loading and unloading your belongings onto and off of moving trucks. We protect your items during the process.",
-    imageUrl:
-      "https://img.freepik.com/free-photo/african-american-delivery-woman-talking-phone-while-going-through-delivery-list-van_637285-2163.jpg?size=626&ext=jpg&ga=GA1.2.1130945038.1691393794&semt=ais",
+    imageUrl: img5,
     link: "loading",
   },
   {
@@ -60,8 +60,7 @@ export const homeData = [
     title: "Storage solutions",
     description:
       "We often provide short-term or long-term storage options for your belongings. This can be helpful some unseen circumstances",
-    imageUrl:
-      "https://images.unsplash.com/photo-1586781383963-8e66f88077ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bW92aW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
+    imageUrl: img2,
     link: "storage",
   },
   {

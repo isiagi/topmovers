@@ -15,7 +15,7 @@ const whyData = [
   },
   {
     title: "Reliability and Trustworthiness",
-    para: "We understand the importance of trust when it comes to entrusting your belongings to a moving company. At [Company Name], we take pride in our reputation for reliability and trustworthiness. We treat your possessions as if they were our own, ensuring their safe and secure transport.",
+    para: "We understand the importance of trust when it comes to entrusting your belongings to a moving company. At Top Movers Uganda, we take pride in our reputation for reliability and trustworthiness. We treat your possessions as if they were our own, ensuring their safe and secure transport.",
     icon: <SiAlwaysdata />,
   },
   {
@@ -35,7 +35,7 @@ const whyData = [
   },
   {
     title: "Stress-Free Moving Experience",
-    para: "Moving can be a stressful and overwhelming experience. By choosing [Company Name], you can enjoy a stress-free move. We take care of the logistics, allowing you to focus on other aspects of your transition. Sit back, relax, and let us handle the heavy lifting.",
+    para: "Moving can be a stressful and overwhelming experience. By choosing Top Movers Uganda, you can enjoy a stress-free move. We take care of the logistics, allowing you to focus on other aspects of your transition. Sit back, relax, and let us handle the heavy lifting.",
     icon: <GiCoffeeCup />,
   },
 ];
@@ -50,8 +50,8 @@ function Why() {
           </h2>
 
           <p className="text-slate-600 max-w-md py-6 mb-3">
-            Choose Top movers as your trusted moving company, and experience the
-            difference we can make in your relocation journey.
+            Choose Top movers Uganda as your trusted moving company, and
+            experience the difference we can make in your relocation journey.
           </p>
         </div>
         <div className="grid grid-cols-fluid gap-5">

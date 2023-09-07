@@ -7,6 +7,7 @@ import { BsInstagram } from "react-icons/bs";
 import { FiTwitter } from "react-icons/fi";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { motion } from "framer-motion";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
@@ -58,7 +59,13 @@ function Page() {
   };
 
   return (
-    <section className="text-gray-600 body-font relative py-20">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      // exist={{ opacity: 0 }}
+      transition={{ duration: 2 }}
+      className="text-gray-600 body-font relative py-20"
+    >
       <ToastContainer />
       <div className="md:px-12 px-2">
         <h2 className="text-3xl text-[#096FC2] border-b-2 pb-3 border-[#EA6E71] w-fit uppercase">
@@ -97,13 +104,18 @@ function Page() {
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                 EMAIL
               </h2>
-              <a className="text-indigo-500 leading-relaxed">
+              <a
+                href="mailto:recipient@example.com"
+                className="text-indigo-500 leading-relaxed"
+              >
                 example@email.com
               </a>
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
                 PHONE
               </h2>
-              <p className="leading-relaxed">123-456-7890</p>
+              <a href="tel:+256742891524">
+                <p className="leading-relaxed">+256742891524/+256783559665</p>
+              </a>
             </div>
           </div>
         </div>
@@ -191,7 +203,7 @@ function Page() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

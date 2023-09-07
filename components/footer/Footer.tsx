@@ -25,8 +25,8 @@ function Footer() {
           </div>
           <div className="my-2">
             <p className="max-w-xs">
-              Lorem ipsum dolor sit amet, consect etur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore ali qua.
+              Top Mover Uganda - Your premier choice for hassle-free relocation.
+              Trust us to move you with care and expertise.
             </p>
           </div>
           <div className="flex items-center gap-3">
@@ -79,14 +79,19 @@ function Footer() {
         </div>
         <div>
           <h3 className="mb-4 font-medium">GET IN TOUCH</h3>
-          <div className="flex items-center gap-2">
-            <HiOutlineMail className="text-xl text-[#A73416] font-bold" />
-            <p>topmovezuganda@gmail.com</p>
-          </div>
-          <div className="flex items-center gap-2">
-            <BiPhoneCall className="text-xl text-[#A73416] font-bold" />
-            <p>+256786998578/+25690234543</p>
-          </div>
+          <a href="mailto:recipient@example.com">
+            <div className="flex items-center gap-2">
+              <HiOutlineMail className="text-xl text-[#A73416] font-bold" />
+
+              <p>topmovezuganda@gmail.com</p>
+            </div>
+          </a>
+          <a href="tel:+256742891524">
+            <div className="flex items-center gap-2">
+              <BiPhoneCall className="text-xl text-[#A73416] font-bold" />
+              <p>+256742891524/+256783559665</p>
+            </div>
+          </a>
           <div className="flex items-center gap-2">
             <GoLocation className="text-xl text-[#A73416] font-bold" />
             <p>Kampala, Uganda</p>
@@ -97,10 +102,15 @@ function Footer() {
       <div className="py-6 text-center">
         <p>Top Movez Uganda 2023</p>
         <p>
-          designed and developed with{" "}
-          <span className="text-[#A73416]">❤</span> by{" "}
+          designed and developed with <span className="text-[#A73416]">❤</span>{" "}
+          by{" "}
           <span className="hover:underline">
-            <Link href="https://portfolio-website-isiagi.vercel.app/" target="_blank">Geofrey Isiagi</Link>
+            <Link
+              href="https://portfolio-website-isiagi.vercel.app/"
+              target="_blank"
+            >
+              Geofrey Isiagi
+            </Link>
           </span>
         </p>
       </div>

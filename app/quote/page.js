@@ -2,6 +2,7 @@
 
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import { motion } from "framer-motion";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -69,7 +70,12 @@ function Page() {
   };
 
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      // exist={{ opacity: 0 }}
+      transition={{ duration: 2 }}
+    >
       <ToastContainer />
       <div className="md:px-12 px-2 py-20">
         <div>
@@ -284,7 +290,7 @@ function Page() {
           </div>
         </form>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
