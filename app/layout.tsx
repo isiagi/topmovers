@@ -6,7 +6,7 @@ import Nav from "@/components/nav/Nav";
 import Banner from "@/components/banner/Banner";
 
 const inter = Roboto({
-  weight: ["300", "500"],
+  weight: ["100", "300", "500"],
   subsets: ["latin"],
 });
 
