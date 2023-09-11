@@ -95,10 +95,7 @@ function Page() {
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                 ADDRESS
               </h2>
-              <p className="mt-1">
-                Photo booth tattooed prism, portland taiyaki hoodie neutra
-                typewriter
-              </p>
+              <p className="mt-1">hello</p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
