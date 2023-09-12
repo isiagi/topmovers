@@ -2,10 +2,11 @@ import React from "react";
 import { BiPhoneCall } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
 import { PiTiktokLogoBold } from "react-icons/pi";
-import { BsWhatsapp } from "react-icons/bs";
+// import { BsWhatsapp } from "react-icons/bs";
 import { FiFacebook } from "react-icons/fi";
+import { BiLogoLinkedinSquare } from "react-icons/bi";
 import { BsInstagram } from "react-icons/bs";
-import { FiTwitter } from "react-icons/fi";
+import { RiTwitterLine } from "react-icons/ri";
 import Link from "next/link";
 
 function Banner() {
@@ -25,8 +26,8 @@ function Banner() {
             <div className="bg-red-400 p-1 rounded text-[#096FC2]">
               <HiOutlineMail />
             </div>
-            <a href="mailto:recipient@example.com">
-              <p className="text-slate-600">topmoverz@gmail.com</p>
+            <a href="mailto:topmoversug@gmail.com">
+              <p className="text-slate-600">topmoversug@gmail.com</p>
             </a>
           </div>
         </div>
@@ -36,18 +37,30 @@ function Banner() {
               <PiTiktokLogoBold />
             </div>
           </Link>
-          <div className="bg-red-400 p-1 rounded text-[#096FC2] bg-transparent">
-            <BsWhatsapp />
-          </div>
-          <div className="bg-red-400 p-1 rounded text-[#096FC2] bg-transparent">
-            <FiFacebook />
-          </div>
+          <Link
+            href={"https://www.linkedin.com/in/top-movers-uganda-831176290"}
+            target="_blank"
+          >
+            <div className="bg-red-400 p-1 rounded text-[#096FC2] bg-transparent">
+              <BiLogoLinkedinSquare />
+            </div>
+          </Link>
+          <Link
+            href="https://www.facebook.com/profile.php?id=100063519168714"
+            target="_blank"
+          >
+            <div className="bg-red-400 p-1 rounded text-[#096FC2] bg-transparent">
+              <FiFacebook />
+            </div>
+          </Link>
           <div className="bg-red-400 p-1 rounded text-[#096FC2] bg-transparent">
             <BsInstagram />
           </div>
-          <div className="bg-red-400 p-1 rounded text-[#096FC2] bg-transparent">
-            <FiTwitter />
-          </div>
+          <Link href={"https://twitter.com/TopmoversUg?s=09"} target="_blank">
+            <div className="bg-red-400 p-1 rounded text-[#096FC2] bg-transparent">
+              <RiTwitterLine />
+            </div>
+          </Link>
         </div>
       </div>
     </div>

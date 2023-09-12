@@ -4,6 +4,7 @@ import logo from "@/public/topmover.png";
 import { GoLocation } from "react-icons/go";
 
 import { PiTiktokLogoBold } from "react-icons/pi";
+import { BiLogoLinkedinSquare } from "react-icons/bi";
 import { BsWhatsapp } from "react-icons/bs";
 import { FiFacebook } from "react-icons/fi";
 import { BsInstagram } from "react-icons/bs";
@@ -33,18 +34,30 @@ function Footer() {
             <div className="bg-white p-1 rounded text-[#0B1B2B]">
               <PiTiktokLogoBold />
             </div>
-            <div className="bg-white p-1 rounded text-[#0B1B2B]">
-              <BsWhatsapp />
-            </div>
-            <div className="bg-white p-1 rounded text-[#0B1B2B]">
-              <FiFacebook />
-            </div>
+            <Link
+              href={"https://www.linkedin.com/in/top-movers-uganda-831176290"}
+              target="_blank"
+            >
+              <div className="bg-white p-1 rounded text-[#0B1B2B]">
+                <BiLogoLinkedinSquare />
+              </div>
+            </Link>
+            <Link
+              href="https://www.facebook.com/profile.php?id=100063519168714"
+              target="_blank"
+            >
+              <div className="bg-white p-1 rounded text-[#0B1B2B]">
+                <FiFacebook />
+              </div>
+            </Link>
             <div className="bg-white p-1 rounded text-[#0B1B2B]">
               <BsInstagram />
             </div>
-            <div className="bg-white p-1 rounded text-[#0B1B2B]">
-              <FiTwitter />
-            </div>
+            <Link href={"https://twitter.com/TopmoversUg?s=09"} target="_blank">
+              <div className="bg-white p-1 rounded text-[#0B1B2B]">
+                <FiTwitter />
+              </div>
+            </Link>
           </div>
         </div>
         <div>
@@ -79,11 +92,11 @@ function Footer() {
         </div>
         <div>
           <h3 className="mb-4 font-medium">GET IN TOUCH</h3>
-          <a href="mailto:recipient@example.com">
+          <a href="mailto:topmoversug@gmail.com">
             <div className="flex items-center gap-2">
               <HiOutlineMail className="text-xl text-[#A73416] font-bold" />
 
-              <p>topmovezuganda@gmail.com</p>
+              <p>topmoversug@gmail.com</p>
             </div>
           </a>
           <a href="tel:+256742891524">

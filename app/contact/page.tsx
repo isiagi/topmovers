@@ -1,15 +1,17 @@
 "use client";
 
 import { PiTiktokLogoBold } from "react-icons/pi";
-import { BsWhatsapp } from "react-icons/bs";
+// import { BsWhatsapp } from "react-icons/bs";
 import { FiFacebook } from "react-icons/fi";
 import { BsInstagram } from "react-icons/bs";
 import { FiTwitter } from "react-icons/fi";
+import { BiLogoLinkedinSquare } from "react-icons/bi";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { motion } from "framer-motion";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Link from "next/link";
 
 function Page() {
   const formRef = useRef<any>();
@@ -102,10 +104,10 @@ function Page() {
                 EMAIL
               </h2>
               <a
-                href="mailto:recipient@example.com"
+                href="mailto:topmoversug@gmail.com"
                 className="text-indigo-500 leading-relaxed"
               >
-                topmovers@gmail.com
+                topmoversug@gmail.com
               </a>
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
                 PHONE
@@ -187,18 +189,30 @@ function Page() {
             <div className=" p-1 rounded text-red-400">
               <PiTiktokLogoBold />
             </div>
-            <div className=" p-1 rounded  text-green-500">
-              <BsWhatsapp />
-            </div>
-            <div className=" p-1 rounded text-blue-600">
-              <FiFacebook />
-            </div>
+            <Link
+              href={"https://www.linkedin.com/in/top-movers-uganda-831176290"}
+              target="_blank"
+            >
+              <div className=" p-1 rounded  text-green-500">
+                <BiLogoLinkedinSquare />
+              </div>
+            </Link>
+            <Link
+              href="https://www.facebook.com/profile.php?id=100063519168714"
+              target="_blank"
+            >
+              <div className=" p-1 rounded text-blue-600">
+                <FiFacebook />
+              </div>
+            </Link>
             <div className=" p-1 rounded text-red-500">
               <BsInstagram />
             </div>
-            <div className=" p-1 rounded ">
-              <FiTwitter />
-            </div>
+            <Link href={"https://twitter.com/TopmoversUg?s=09"} target="_blank">
+              <div className=" p-1 rounded ">
+                <FiTwitter />
+              </div>
+            </Link>
           </div>
         </div>
       </div>
