@@ -95,7 +95,7 @@ function Page() {
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
                 ADDRESS
               </h2>
-              <p className="mt-1">hello</p>
+              <p className="mt-1">Gayaza Road, Kampala</p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
@@ -105,13 +105,15 @@ function Page() {
                 href="mailto:recipient@example.com"
                 className="text-indigo-500 leading-relaxed"
               >
-                example@email.com
+                topmovers@gmail.com
               </a>
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
                 PHONE
               </h2>
               <a href="tel:+256742891524">
-                <p className="leading-relaxed">+256742891524/+256783559665</p>
+                <p className="leading-relaxed">
+                  +256742891524 /<br /> +256783559665
+                </p>
               </a>
             </div>
           </div>
